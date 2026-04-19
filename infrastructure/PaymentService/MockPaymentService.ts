@@ -1,7 +1,7 @@
-import {
+import type {
   IPaymentService,
   PaymentResult,
-} from "../../domain/PaymentService/PaymentService";
+} from "../../domain/PaymentService/PaymentService.js";
 
 export class MockPaymentService implements IPaymentService {
   async processPayment(amount: number): Promise<PaymentResult> {
